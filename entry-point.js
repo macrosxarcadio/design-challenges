@@ -6,7 +6,6 @@ exec('npm run run-less', (error, stdout, stderr) => {
   } else {
     console.log('less Script executed successfully!');
     console.log(stdout);
-
     // Run the "node index.js" command after the "run-less" script completes
     exec('node index.js', (error, stdout, stderr) => {
       if (error) {
